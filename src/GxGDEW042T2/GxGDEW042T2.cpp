@@ -422,7 +422,7 @@ void GxGDEW042T2::updateToWindow(uint16_t xs, uint16_t ys, uint16_t xd, uint16_t
   _writeToWindow(xs, ys, xd, yd, w, h);
   IO.writeCommandTransaction(0x12);      //display refresh
   _waitWhileBusy("updateToWindow");
-  delay(500); // don't stress this display
+  //delay(500); // don't stress this display
 }
 
 void GxGDEW042T2::powerDown()
